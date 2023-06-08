@@ -1,0 +1,11 @@
+export { default as Home } from "./Home";
+export { default as About } from "./About";
+export { default as Contact } from "./Contact";
+export { default as News } from "./News";
+export { default as NotFound } from "./NotFound";
+export { default as Rooms } from "./Rooms";
+export { default as RoomDetails } from "./RoomDetails";
+export { default as SinglePost } from "./SinglePost";
+export { default as Spa } from "./Spa";
+export { default as Restaurant } from "./Restaurant";
+export { default as ComingSoon } from "./ComingSoon";
