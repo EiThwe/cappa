@@ -1,9 +1,14 @@
 import React from "react";
+
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 const Home = () => {
-  return <Layout></Layout>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 };
 
 export default Home;
