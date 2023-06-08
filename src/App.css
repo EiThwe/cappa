@@ -6,6 +6,18 @@
   font-size: 15px;
 }
 
+.homeBg {
+  background-image: url("./assets/home-bg.jpg");
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.mainContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
