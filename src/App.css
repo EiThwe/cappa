@@ -12,6 +12,12 @@
   background-size: cover;
 }
 
+.mainContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
