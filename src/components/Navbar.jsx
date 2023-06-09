@@ -4,6 +4,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { navbarData } from "../utils/data";
 import Logo from "../assets/logo.png";
 import MenuButton from "../assets/icons/menu-button.svg";
+import MenuButtonPrimary from "../assets/icons/menu-button-primary.svg";
 
 const Navbar = ({ scrollNavbar }) => {
   const { pathname } = useLocation();
@@ -41,7 +42,7 @@ const Navbar = ({ scrollNavbar }) => {
             className="md:hidden block"
           >
             <img
-              src={MenuButton}
+              src={scrollNavbar ? MenuButtonPrimary : MenuButton}
               alt="burger-icon"
               className="w-[20px] text-white"
             />
