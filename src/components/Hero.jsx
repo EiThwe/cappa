@@ -1,13 +1,7 @@
 import React from "react";
 
-import Navbar from "./Navbar";
-
 const Hero = () => {
-  return (
-    <div className="w-full min-h-screen">
-      <Navbar />
-    </div>
-  );
+  return <div className="w-full min-h-[3000px]"></div>;
 };
 
 export default Hero;
