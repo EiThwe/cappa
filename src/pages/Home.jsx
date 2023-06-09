@@ -1,9 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
+import ExtraServices from "../components/ExtraServices";
+import CardCarousel from "../components/CardCarousel";
 
 const Home = () => {
-  return <Layout></Layout>;
+  return (
+    <Layout>
+   <ExtraServices/>
+   {/* <CardCarousel/> */}
+    </Layout>
+  );
 };
 
 export default Home;
