@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import ScrollBtn from "./ScrollBtn";
 
 const Layout = ({ children }) => {
-  const [showScrollNavbar, setShowScrollNavbar] = useState(false);
   const [scrollHeight, setScrollHeight] = useState(0);
 
   useEffect(() => {
@@ -36,15 +35,8 @@ const Layout = ({ children }) => {
       {children}
 
       <Footer />
-      <div
-        id="scroll-btn"
-        className={`${
-          scrollHeight > 400 ? "translate-y-0" : "translate-y-[300%]"
-        } transition-all
-       duration-300 ease-in-out fixed bottom-5 right-5`}
-      >
-        <ScrollBtn scrollHeight={scrollHeight} />
-      </div>
+
+      <ScrollBtn scrollHeight={scrollHeight} />
     </div>
   );
 };

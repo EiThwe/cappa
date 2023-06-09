@@ -10,10 +10,10 @@ const Navbar = ({ scrollNavbar }) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <>
+    <div className={!scrollNavbar && " absolute top-0 w-full"}>
       <div
         className={`w-full z-10 ${
-          scrollNavbar ? " h-[90px] bg-bgDark" : "h-[100px] absolute top-0"
+          scrollNavbar ? " h-[90px] bg-bgDark" : "h-[100px] bg-transparent"
         }`}
       >
         <div className="max-w-[1100px] h-full mx-auto flex justify-between items-center px-[20px]">
@@ -51,7 +51,7 @@ const Navbar = ({ scrollNavbar }) => {
 
       <div
         id="responsive-navbar"
-        className={`w-full z-10 bg-bgDark px-[20px] flex md:hidden flex-col overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`w-full  z-10 bg-bgDark px-[20px] flex md:hidden flex-col overflow-hidden transition-all duration-300 ease-in-out ${
           showNavbar ? "h-[385px] py-[30px]" : "h-0 "
         } `}
       >
@@ -70,7 +70,7 @@ const Navbar = ({ scrollNavbar }) => {
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

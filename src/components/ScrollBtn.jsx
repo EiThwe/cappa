@@ -34,7 +34,14 @@ const ScrollBtn = ({ scrollHeight }) => {
   };
 
   return (
-    <button onClick={handleOnClick} className="w-[45px] h-[45px]  ">
+    <button
+    id="scroll-btn"
+      onClick={handleOnClick}
+      className={`${
+        scrollHeight > 400 ? "translate-y-0" : "translate-y-[300%]"
+      } transition-all
+   duration-300 ease-in-out fixed bottom-5 right-5 w-[45px] h-[45px]  `}
+    >
       <CircularProgressbar
         value={percentage}
         strokeWidth={3}
