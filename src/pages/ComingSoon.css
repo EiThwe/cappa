@@ -1,0 +1,21 @@
+.background {
+  background-image: url("https://duruthemes.com/demo/html/cappa/demo2-dark/img/slider/1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+}
+.blackbackground {
+  background-color: black;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+  opacity: 0.35;
+}
