@@ -1,5 +1,7 @@
 @import "../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Gilda+Display&display=swap");
+@import url("assets/plugins/themify-icons.css");
+@import url("assets/plugins/flaticon.css");
 
 * {
   font-family: "Barlow", sans-serif;
