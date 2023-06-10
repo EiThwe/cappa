@@ -12,9 +12,9 @@ const ExtraServices = () => {
             <h6 className="subtitle mb-1 text-primary tracking-[6px] font-barlowCondensed">
               BEST PRICES
             </h6>
-            <h1 className=" main-title font-gilda text-white font-medium text-[46px] leading-[57.5px] mb-5">
+            <h2 className=" main-title font-gilda text-white font-medium text-[46px] leading-[57.5px] mb-5">
               Extra Services
-            </h1>
+            </h2>
             <p className="para-1 text-secondary leading-[26.3px] mb-5">
               The best prices for your relaxing vacation. The utanislen quam
               nestibulum ac quame odion elementum sceisue the aucan.

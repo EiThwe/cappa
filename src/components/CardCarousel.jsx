@@ -1,21 +1,19 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+
 import PricingCarouselCard from "./PricingCarouselCard";
-import { useState } from "react";
+
 import { pricingCardData } from "../utils/data";
 
 const CardCarousel = () => {
-  const [index, setIndex] = useState(2);
-  const responsive ={
-    0:{
-      items:1
+  const responsive = {
+    0: {
+      items: 1,
     },
-    1024:{
-      items:2
-    }
-  }
+    1024: {
+      items: 2,
+    },
+  };
 
   return (
     <OwlCarousel
@@ -32,7 +30,7 @@ const CardCarousel = () => {
       dotsClass="owl-dots"
       dotClass="owl-dot"
     >
-      {pricingCardData.map((data,i) => (
+      {pricingCardData.map((data, i) => (
         <PricingCarouselCard key={i} {...data} />
       ))}
     </OwlCarousel>
