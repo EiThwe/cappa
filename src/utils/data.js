@@ -120,3 +120,50 @@ export const pricingCardData = [
     per: "daily",
   },
 ];
+
+export const clientReviewCarouselData = [
+  {
+    name: "Emily Brown",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/team/4.jpg",
+  },
+  {
+    name: "Norlan White",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/team/1.jpg",
+  },
+  {
+    name: "Olivia Martin",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/team/5.jpg",
+  },
+];
+
+export const servicesData = [
+  {
+    category: "DISCOVER",
+    title: "The Restaurant",
+    image:
+      "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/1.jpg",
+    description:
+      "Restaurant inilla duiman at elit finibus viverra nec a lacus themo the nesudea seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne onen nivami acsestion augue artine.",
+  },
+  {
+    category: "EXPERIENCES",
+    title: "Spa Center",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/3.jpg",
+    description:
+      "Spa center inilla duiman at elit finibus viverra nec a lacus themo the nesudea seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne onen nivami acsestion augue artine.",
+  },
+  {
+    category: "MODERN",
+    title: "Fitness Center",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/2.jpg",
+    description:
+      "Restaurant inilla duiman at elit finibus viverra nec a lacus themo the nesudea seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne onen nivami acsestion augue artine.",
+  },
+  {
+    category: "EXPERIENCES",
+    title: "The Health Club & Pool",
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/1.jpg",
+    description:
+      "The health club & pool at elit finibus viverra nec a lacus themo the nesudea seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne onen nivami acsestion augue artine.",
+  },
+];

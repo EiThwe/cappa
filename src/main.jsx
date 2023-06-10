@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import "animate.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

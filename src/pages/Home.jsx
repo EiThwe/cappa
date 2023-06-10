@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import FiveStar from "../components/FiveStar";
 import PromotionalVideo from "../components/PromotionalVideo";
 import ClientReview from "../components/ClientReview";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
       <Hero />
       <ExtraServices />
       <ClientReview />
+      <Services />
+      <PromotionalVideo />
     </Layout>
   );
 };

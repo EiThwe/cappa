@@ -1,7 +1,7 @@
 import React from "react";
 import FiveStar from "./FiveStar";
 
-const ReviewCard = () => {
+const ReviewCard = ({ name, image }) => {
   return (
     <div className="py-5 relative">
       <p className="mb-5">
@@ -12,17 +12,14 @@ const ReviewCard = () => {
       </p>
       <div className="flex gap-5">
         <div className="img-container w-[80px] h-[80px] rounded-full overflow-hidden">
-          <img
-            src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/team/4.jpg"
-            alt=""
-          />
+          <img src={image} alt={name} />
         </div>
         <div className="text-card flex flex-col justify-center items-start py-1">
           <div className="mb-3">
             <FiveStar size="w-[12px]" />
           </div>
           <p className="font-barlowCondensed tracking-[3px] leading-[16px] text-base mb-2">
-            Emily Brown
+            {name}
           </p>
           <p className="text-xs">Guest Review</p>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import ReviewCard from "./ReviewCard";
+import { clientReviewCarouselData } from "../utils/data";
 
 const ReviewCarousel = () => {
   return (
@@ -13,8 +14,8 @@ const ReviewCarousel = () => {
       dotsClass="owl-dots"
       dotClass="owl-dot"
     >
-      {[0, 1, 2].map((i) => (
-        <ReviewCard key={i} />
+      {clientReviewCarouselData.map((data, i) => (
+        <ReviewCard key={i} {...data} />
       ))}
     </OwlCarousel>
   );
