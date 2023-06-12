@@ -10,7 +10,7 @@ const Navbar = ({ scrollNavbar }) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className={!scrollNavbar && " absolute top-0 w-full"}>
+    <div className={!scrollNavbar ? " absolute top-0 w-full" : ""}>
       <div
         className={`w-full z-10 ${
           scrollNavbar ? " h-[90px] bg-bgDark" : "h-[100px] bg-transparent"
