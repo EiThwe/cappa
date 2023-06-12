@@ -18,9 +18,9 @@ const Rooms = () => {
   return (
     <>
       <div className="bg-bgDark">
-        <div className="mainContainer ">
+        <div className="mainContainer  ">
           {/* title section */}
-          <div className="">
+          <div className="px-4 sm:px-16 md:px-10 lg:px-10">
             <h6 className="text-primary font-barlowCondensed text-[16px] tracking-[4px]  mb-4">
               THE CAPPA LUXURY HOTEL
             </h6>
@@ -29,12 +29,12 @@ const Rooms = () => {
             </h2>
           </div>
           {/* Room card section  */}
-          <div className="upper flex justify-center items-center mb-5">
+          <div className="upper  px-4 sm:px-16 md:px-10 lg:px-10 justify-center items-center mb-5 flex flex-col md:flex-row gap-5 ">
             {upperRooms?.map((room, index) => {
               return <Room key={index} {...room} />;
             })}
           </div>
-          <div className="lower flex justify-center items-center">
+          <div className="lower px-4 sm:px-16 md:px-10 lg:px-10  flex flex-col md:flex-row  justify-center items-center gap-5 ">
           {lowerRooms?.map((room, index) => {
               return <Room2 key={index} {...room} />;
             })}

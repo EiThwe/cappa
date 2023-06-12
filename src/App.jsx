@@ -28,7 +28,7 @@ const App = () => {
       <Route path="/detail" element={<RoomDetails />} />
       <Route path="/rooms" element={<Rooms />} />
       <Route path="/coming-soon" element={<ComingSoon />} />
-      {/* <Route path="/notFound" element={<NotFound />} /> */}
+      <Route path="/notFound" element={<NotFound />} />
     </Routes>
   );
 };

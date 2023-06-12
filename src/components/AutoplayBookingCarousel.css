@@ -1,0 +1,6 @@
+.owl-dots button {
+  display: none;
+}
+.owl-loaded .owl-stage-outer{
+  margin-top: 0px !important;
+}

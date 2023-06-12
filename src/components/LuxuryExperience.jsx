@@ -1,13 +1,13 @@
 import React from "react";
-import 'animate.css';
+import "animate.css";
 
 const LuxuryExperience = () => {
   return (
     <>
-      <div className="bg-bgSoft     w-full">
-        <div className="mainContainer  flex flex-col lg:flex-row  ">
+      <div className="bg-bgSoft     ">
+        <div className="mainContainer  flex flex-col md:flex-row lg:flex-row  ">
           {/* text side */}
-          <div className="  px-3 sm:px-16 lg:px-0 ">
+          <div className="  px-4 py-8 sm:px-16 md:px-10 md:min-w-[50%] md:pr-0 lg:px-10  ">
             <div className="star mb-3">
               <i className="fi fi-ss-star text-starColor mr-2 "></i>
               <i className="fi fi-ss-star text-starColor mr-2 "></i>
@@ -44,16 +44,18 @@ const LuxuryExperience = () => {
             </div>
           </div>
           {/* images side  */}
-          <div className="flex px-3 sm:px-16 lg:px-0 gap-5 ">
-            <div className="One w-[45%] mt-auto pl-5 ">
+          <div className="flex justify-end px-4 sm:px-16 md:pl-0 md:pr-10 md:-translate-y-40 lg:translate-y-0 md:gap-8  lg:px-0  gap-7 ">
+            <div className="One w-[46%] md:w-[40%] mt-auto py-24 ">
               <img
-                src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/8.jpg" className="w-full animate__animated animate__slideInUp h-[80%]"
+                src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/8.jpg"
+                className="w-full animate__animated animate__slideInUp  h-[80%]"
                 alt=""
               />
             </div>
-            <div className="two w-[45%]  pl-5">
+            <div className="two w-[46%] md:w-[40%] mt-auto py-24  -translate-y-20">
               <img
-                src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/2.jpg" className="w-full animate__animated animate__slideInUp h-[80%]"
+                src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/2.jpg"
+                className="w-full animate__animated animate__slideInUp  h-[80%]"
                 alt=""
               />
             </div>

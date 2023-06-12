@@ -13,13 +13,14 @@ import Hero from "../components/Hero";
 const Home = () => {
   return (
     <Layout>
-      <ExtraServices />
-      {/* <CardCarousel/> */}
-      <LuxuryExperience />
+      <Navbar/>
+       <LuxuryExperience />
       <Rooms />
+      {/* <ExtraServices /> */}
+ 
       <OurNews />
-      <Booking />
-      <Hero />
+      <Booking /> 
+
     </Layout>
   );
 };

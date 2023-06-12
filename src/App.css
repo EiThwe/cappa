@@ -10,9 +10,12 @@
 
 .homeBg {
   background-image: url("./assets/home-bg.jpg");
-  /* background-position: center; */
+ 
   background-size: cover;
+
 }
+
+
 
 .mainContainer {
   max-width: 1100px;

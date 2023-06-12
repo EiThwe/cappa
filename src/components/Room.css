@@ -2,47 +2,27 @@
   width: 25%;
   height: 0.07px;
   background-color: rgba(255, 255, 255, 0.7);
+  transition: width 0.8s 0.3s ease;
 }
 
 .backgroundImg:hover .underLine {
-  animation: fullWidth;
-  animation-duration: 0.3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
   color: white;
-}
-
-@keyframes fullWidth {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 210%;
-  }
+  width: 100%;
 }
 
 .underLine2 {
-  width: 45%;
-  height: 0.1px;
-  background-color: white;
+    width: 25%;
+    height: 0.07px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: width 0.8s 0.3s ease;
 }
 
 .backgroundImg:hover .underLine2 {
-  animation: fullWidth2;
-  animation-duration: 0.3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  color: white;
+    color: white;
+    width: 100%;
 }
 
-@keyframes fullWidth2 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 290%;
-  }
-}
+
 
 .badgeBook {
   writing-mode: vertical-rl;
