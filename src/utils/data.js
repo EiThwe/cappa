@@ -112,3 +112,75 @@ export const pricingCardData = [
     package: "daily",
   },
 ];
+
+export const hotelFacilitiesData = [
+  {
+    icon: "flaticon-world",
+    title: "Pick Up & Drop",
+    description:
+      "  We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-car",
+    title: "Parking Space",
+    description:
+      "Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-bed",
+    title: "Room Service",
+    description:
+      "Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-swimming",
+    title: "Swimming Pool",
+    description:
+      "Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-wifi",
+    title: "Fibre Internet",
+    description:
+      "Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-breakfast",
+    title: "Breakfast",
+    description:
+      "Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant",
+  },
+];
+
+export const heroData = [
+  {
+    image: "https://i.postimg.cc/bwChsyRL/2.jpg",
+    category: "LUXERY HOTEL & BEST RESORT",
+    title: "ENJOY A LEXIRY EXPERIENCE",
+  },
+  {
+    image: "https://i.postimg.cc/9MT58GHN/3.jpg",
+    category: "UNIQUE PLACE TO RELAX & ENJOY",
+    title: "THE PERFECT BASE FOR YOU",
+  },
+  {
+    image: "https://i.postimg.cc/26mJjgZr/1.jpg",
+    category: "THE ULTIMATE LEXURY EXPERIENCE",
+    title: "ENJOY THE BEST MOMENTS OF LIFE",
+  },
+];
+
+export const recentPostData = [
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/2.jpg",
+    title: "Historic restaurant renovated",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/3.jpg",
+    title: "Benefits of Spa Treatments",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/slider/7.jpg",
+    title: "Retro Lighting Design in The Hotels",
+  },
+]

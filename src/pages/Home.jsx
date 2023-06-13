@@ -12,13 +12,13 @@ import HotelFacilities from "../components/HotelFacilities";
 const Home = () => {
   return (
     <Layout>
-      <LuxuryExperience />
+      {/* <LuxuryExperience />
       <Rooms />
       <OurNews />
-      <Booking />
+      <Booking /> */}
       <Hero />
+
       <HotelFacilities />
-      <div className="w-full h-[400px] bg-red-300" />
     </Layout>
   );
 };

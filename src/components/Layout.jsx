@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       <div
         id="scroll-navbar"
         className={`${
-          scrollHeight > 400 ? "translate-y-0" : "-translate-y-[300%]"
+          scrollHeight > 100 ? "translate-y-0" : "-translate-y-[300%]"
         } transition-all duration-500 ease-in-out fixed top-0 w-full z-10`}
       >
         <Navbar scrollNavbar />

@@ -11,9 +11,9 @@ const Navbar = ({ scrollNavbar }) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className={!scrollNavbar && " absolute top-0 w-full"}>
+    <div className={`${!scrollNavbar ? " absolute top-0 w-full" : ""} z-[100]`}>
       <div
-        className={`w-full z-10 ${
+        className={`w-full z-[100] ${
           scrollNavbar ? " h-[90px] bg-bgDark" : "h-[100px] bg-transparent"
         }`}
       >
@@ -52,7 +52,7 @@ const Navbar = ({ scrollNavbar }) => {
 
       <div
         id="responsive-navbar"
-        className={`w-full  z-10 bg-bgDark px-[20px] flex md:hidden flex-col overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`w-full  z-[100] bg-bgDark px-[20px] flex md:hidden flex-col overflow-hidden transition-all duration-300 ease-in-out ${
           showNavbar ? "h-[385px] py-[30px]" : "h-0 "
         } `}
       >
