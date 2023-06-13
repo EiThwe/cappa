@@ -7,9 +7,9 @@ const FormInput = ({ type, placeholder }) => {
       onFocus={() => setFocus(true)}
       onBlur={() => setFocus(false)}
       type={type ? type : "text"}
-      className={`border-b customPlaceholder ${
+      className={`border-b customPlaceholder bg-transparent ${
         focus ? "border-primary" : "border-secondary border-opacity-20"
-      }  text-secondary bg-bgSoft w-full py-3 outline-none`}
+      }  text-secondary  w-full py-3 outline-none`}
       placeholder={placeholder}
     />
   );

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Room = ({ id, name, price, time, img }) => {
   console.log(id);
   return (
-    <div className="">
+    <div className="w-[95%]">
       {/* background image  */}
-      <div className="backgroundImg w-[95%] relative  overflow-hidden group">
+      <div className="backgroundImg  relative  overflow-hidden group">
         <img
           src={img}
           className="w-full h-full group-hover:bg-black   group-hover:opacity-60  group-hover:scale-125 transition-all object-cover duration-1000"
@@ -33,7 +33,7 @@ const Room = ({ id, name, price, time, img }) => {
               <i className="flaticon-towel text-[18px] hover:text-primary"></i>
             </div>
             <div className="">
-              <Link to="/room-detail">
+              <Link to="/detail">
                 <button className="text-[14px] uppercase tracking-[2px] hover:text-primary transition-all duration-300 cursor-pointer">
                   Details <i className="ti-arrow-right text-[10px]"></i>
                 </button>

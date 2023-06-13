@@ -99,7 +99,7 @@ const JuniorSuiteSection = () => {
                   </p>
                 </div>
                 <div className="lg:mb-0 sm:mb-5 mb-10">
-                  <Button />
+                  <Button hoverBg="bg-[#3B3B3B]">CHECK NOW</Button>
                 </div>
               </div>
               <div className="col lg:w-[33%] w-full">

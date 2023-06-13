@@ -69,9 +69,9 @@ const ContactFormSection = () => {
               <FormInput type="email" placeholder="Your Email*" />
               <FormInput placeholder="Your Number*" />
               <FormInput placeholder="Subject*" />
-              <Textarea placeholder="Message*"/>
+              <Textarea placeholder="Message*" />
             </div>
-            <Button/>
+            <Button width="w-[160px]">SEND MESSAGE</Button>
           </div>
         </div>
       </div>

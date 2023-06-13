@@ -5,6 +5,7 @@ import { navbarData } from "../utils/data";
 import Logo from "../assets/logo.png";
 import MenuButton from "../assets/icons/menu-button.svg";
 import Dropdown from "./Dropdown";
+import MenuButtonPrimary from "../assets/icons/menu-button-primary.svg";
 
 const Navbar = ({ scrollNavbar }) => {
   const { pathname } = useLocation();
@@ -12,9 +13,11 @@ const Navbar = ({ scrollNavbar }) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className={!scrollNavbar && " absolute top-0 w-full"}>
+    <div
+      className={`${!scrollNavbar ? " absolute top-0 w-full" : ""} z-[1000]`}
+    >
       <div
-        className={`w-full z-10 ${
+        className={`w-full z-[100] ${
           scrollNavbar ? " h-[90px] bg-bgDark" : "h-[100px] bg-transparent"
         }`}
       >
@@ -23,7 +26,7 @@ const Navbar = ({ scrollNavbar }) => {
 
           <div
             id="nav-bar"
-            className="md:flex items-center gap-6 hidden h-full"
+            className="lg:flex items-center gap-6 hidden h-full"
           >
             {navbarData.map(({ path, name, subData }, index) => {
               const [isHover, setIsHover] = useState(false);
@@ -67,10 +70,10 @@ const Navbar = ({ scrollNavbar }) => {
 
           <button
             onClick={() => setShowNavbar(!showNavbar)}
-            className="md:hidden block"
+            className="lg:hidden block"
           >
             <img
-              src={MenuButton}
+              src={scrollNavbar ? MenuButtonPrimary : MenuButton}
               alt="burger-icon"
               className="w-[20px] text-white"
             />
@@ -80,9 +83,9 @@ const Navbar = ({ scrollNavbar }) => {
 
       <div
         id="responsive-navbar"
-        className={`w-full  z-10 bg-bgDark px-[20px] flex md:hidden flex-col overflow-hidden transition-all 
+        className={`w-full  z-[1000] bg-bgDark px-[20px] flex lg:hidden flex-col overflow-hidden transition-all 
         duration-300 ease-in-out overflow-y-scroll ${
-          showNavbar ? "h-[385px] py-[30px]" : "h-0 "
+          showNavbar ? "h-[385px] py-[30px]" : "h-0"
         } `}
       >
         {navbarData.map(({ path, name, subData }, index) => {
@@ -97,9 +100,7 @@ const Navbar = ({ scrollNavbar }) => {
               }}
               key={index}
               className={`h-auto flex items-start flex-col justify-center ${
-                pathname == path
-                  ? "text-primary"
-                  : "text-white "
+                pathname == path ? "text-primary" : "text-white "
               }`}
             >
               <div className="h-[55px] flex items-center gap-1">

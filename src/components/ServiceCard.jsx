@@ -23,7 +23,7 @@ const ServiceCard = ({ reverse, title, category, image, description }) => {
           {title}
         </h2>
         <p className="text-base text-secondary mb-3">{description}</p>
-        <Button />
+        <Button hoverBg="bg-[#3B3B3B]">LEARN MORE</Button>
       </div>
     </div>
   );

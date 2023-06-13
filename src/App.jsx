@@ -13,8 +13,12 @@ import {
   Rooms,
   SinglePost,
   Spa,
+  FAQ,
+  Services,
+  Facilities,
+  Team,
+  Pricing
 } from "./pages";
-import FAQ from "./pages/FAQ";
 
 const App = () => {
   return (
@@ -31,6 +35,10 @@ const App = () => {
       <Route path="/coming-soon" element={<ComingSoon />} />
       <Route path="/faqs" element={<FAQ />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/facilities" element={<Facilities />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/pricing" element={<Pricing />} />
     </Routes>
   );
 };

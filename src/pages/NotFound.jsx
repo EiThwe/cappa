@@ -11,10 +11,13 @@ const NotFound = () => {
       <div className=" not-found-bg ">
         <Navbar />
         {/* main div  */}
-        <div className=" w-[90%]   absolute left-[50%] md:top-[54%] sm:top-[56%] lg:top-[50%] top-[70%] -translate-x-[50%] -translate-y-[50%] ">
+        <div
+          className=" w-[90%]   absolute left-[50%] md:top-[54%] sm:top-[56%] lg:top-[50%] top-[70%] -translate-x-[50%] 
+        -translate-y-[50%] "
+        >
           {/* 404text  */}
           <div className=" flex  flex-col justify-center items-center">
-            <h1 className="text-transparent fourOfour p-0 text-[200px] font-normal font-gilda mb-0 ">
+            <h1 className="text-transparent fourOfour p-0 text-[200px] font-normal font-gilda mb-0 translate-y-10">
               404
             </h1>
             <h4 className="text-white font-gilda text-[36px] lg:text-[46px]  mb-5">

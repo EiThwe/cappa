@@ -15,6 +15,9 @@ module.exports = {
         secondary: "#ADADAD",
         starColor: "#E4A853",
       },
+      screens: {
+        xs: "475px",
+      },
     },
   },
   plugins: [],

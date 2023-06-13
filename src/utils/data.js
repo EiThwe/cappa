@@ -61,10 +61,6 @@ export const navbarData = [
         name: "Pricing",
       },
       {
-        path: "/careers",
-        name: "Careers",
-      },
-      {
         path: "/faqs",
         name: "F.A.Qs",
       },
@@ -534,7 +530,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 2,
@@ -542,7 +538,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 3,
@@ -550,7 +546,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 4,
@@ -558,7 +554,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 5,
@@ -566,7 +562,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 6,
@@ -574,7 +570,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
   },
   {
     id: 7,
@@ -582,6 +578,79 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "sm:h-[80px] h-[140px]",
+    height: "sm:h-[80px] xs:h-[140px] h-[180px]",
+  },
+];
+
+export const hotelFacilitiesData = [
+  {
+    icon: "flaticon-world",
+    title: "Pick Up & Drop",
+    description:
+      "  We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-car",
+    title: "Parking Space",
+    description:
+      "Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-bed",
+    title: "Room Service",
+    description:
+      "Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-swimming",
+    title: "Swimming Pool",
+    description:
+      "Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-wifi",
+    title: "Fibre Internet",
+    description:
+      "Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.",
+  },
+  {
+    icon: "flaticon-breakfast",
+    title: "Breakfast",
+    description:
+      "Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant",
+  },
+];
+
+export const heroData = [
+  {
+    image: "https://i.postimg.cc/bwChsyRL/2.jpg",
+    category: "LUXURY HOTEL & BEST RESORT",
+    title: "ENJOY A LUXURY EXPERIENCE",
+  },
+  {
+    image: "https://i.postimg.cc/9MT58GHN/3.jpg",
+    category: "UNIQUE PLACE TO RELAX & ENJOY",
+    title: "THE PERFECT BASE FOR YOU",
+  },
+  {
+    image: "https://i.postimg.cc/26mJjgZr/1.jpg",
+    category: "THE ULTIMATE LUXURY EXPERIENCE",
+    title: "ENJOY THE BEST MOMENTS OF LIFE",
+  },
+];
+
+export const recentPostData = [
+  {
+    image:
+      "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/2.jpg",
+    title: "Historic restaurant renovated",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/3.jpg",
+    title: "Benefits of Spa Treatments",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/slider/7.jpg",
+    title: "Retro Lighting Design in The Hotels",
   },
 ];

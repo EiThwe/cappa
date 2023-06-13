@@ -9,14 +9,18 @@ import ClientReview from "../components/ClientReview";
 import Services from "../components/Services";
 import OurNews from "../components/OurNews";
 import Booking from "../components/Booking";
+import Hero from "../components/Hero";
+import HotelFacilities from "../components/HotelFacilities";
 
 const Home = () => {
   return (
     <Layout>
+      <Hero />
       <LuxuryExperience />
       <RoomsAndSuites />
       <ExtraServices />
       <PromotionalVideo />
+      <HotelFacilities />
       <ClientReview />
       <Services />
       <OurNews />
