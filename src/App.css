@@ -8,6 +8,11 @@
   font-size: 15px;
 }
 
+.customPlaceholder::placeholder {
+  color: #adadad;
+  opacity: 1; /* Firefox */
+}
+
 .homeBg {
   background-image: url("./assets/home-bg.jpg");
   /* background-position: center; */

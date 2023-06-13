@@ -16,7 +16,7 @@ const ReviewCard = ({ name, image }) => {
         </div>
         <div className="text-card flex flex-col justify-center items-start py-1">
           <div className="mb-3">
-            <FiveStar size="w-[12px]" />
+            <FiveStar size="w-[12px]" gap={"gap-[2px]"} />
           </div>
           <p className="font-barlowCondensed tracking-[3px] leading-[16px] text-base mb-2">
             {name}

@@ -1,6 +1,4 @@
 import React from "react";
-import call from "../assets/call.svg";
-import PricingCarouselCard from "./PricingCarouselCard";
 import CardCarousel from "./CardCarousel";
 
 const ExtraServices = () => {
@@ -9,7 +7,7 @@ const ExtraServices = () => {
       <div className="mainContainer sm:px-14 md:px-10 lg:px-0 px-3">
         <div className=" row w-full flex md:flex-row md:gap-8 flex-col gap-10 ">
           <div className=" col md:w-[32%] w-full h-full ">
-            <h6 className="subtitle mb-1 text-primary tracking-[6px] font-barlowCondensed">
+            <h6 className="subtitle mb-1 text-base text-primary tracking-[6px] font-barlowCondensed">
               BEST PRICES
             </h6>
             <h2 className=" main-title font-gilda text-white font-medium text-[46px] leading-[57.5px] mb-5">
@@ -23,9 +21,11 @@ const ExtraServices = () => {
               Orci varius natoque penatibus et magnis disney parturient monte
               nascete ridiculus mus nellen etesque habitant morbine.
             </p>
-            <div className=" reservations flex gap-2">
-              <img src={call} alt="" className="w-[35px]" />
-              <div className="">
+            <div className=" reservations flex items-center gap-3">
+              <div className="icon">
+                <span className="flaticon-call text-primary text-[38px]"></span>
+              </div>
+              <div className="text">
                 <p className="text-secondary mb-1">For Information</p>
                 <p className="phone-number text-primary text-2xl ">
                   855 100 444
