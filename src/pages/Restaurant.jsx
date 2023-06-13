@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Layout from "../components/Layout";
+import RestaurantSection from "../components/RestaurantSection";
+import RestaurantMenu from "../components/RestaurantMenu";
+import ClientReview from "../components/ClientReview";
 
 const Restaurant = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Layout>
+      <RestaurantSection />
+      <RestaurantMenu />
+      <ClientReview />
+    </Layout>
+  );
+};
 
-export default Restaurant
+export default Restaurant;

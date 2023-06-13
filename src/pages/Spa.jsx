@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import Layout from "../components/Layout";
+import SpaWellnessSection from "../components/SpaWellnessSection";
+import Services from "../components/Services";
+import SpaEtiquetteFAQ from "../components/SpaEtiquetteFAQ";
+import ClientReview from "../components/ClientReview";
 
 const Spa = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Layout>
+      <SpaWellnessSection />
+      <Services />
+      <SpaEtiquetteFAQ />
+      <ClientReview />
+    </Layout>
+  );
+};
 
-export default Spa
+export default Spa;

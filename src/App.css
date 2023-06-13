@@ -15,8 +15,14 @@
 
 .homeBg {
   background-image: url("./assets/home-bg.jpg");
-  /* background-position: center; */
+
   background-size: cover;
+}
+
+.animate__animated.animate__fadeInUp,
+.animate__animated.animate__fadeOutDown {
+  --animate-duration: 300ms;
+  --animate-delay: 5s;
 }
 
 .mainContainer {

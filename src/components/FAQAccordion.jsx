@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiMinus, HiPlus } from "react-icons/hi2";
-import { accordionData } from "../utils/data";
+
 
 const FAQAccordion = ({ accData }) => {
   const [data, setData] = useState(accData);
@@ -24,20 +24,22 @@ const FAQAccordion = ({ accData }) => {
         <li className="w-full h-auto bg-[#2B2B2B] mb-5 last:mb-0">
           <div
             onClick={() => toggleAccordion(id)}
-            className={`accordion-btn cursor-pointer w-full flex items-center justify-between  py-6 px-10`}
+            className={`accordion-btn cursor-pointer w-full flex sm:items-center items-start sm:justify-between gap-10  py-6 px-10`}
           >
             <h5
               className={`${
                 isOpen ? "text-primary" : "text-white"
-              } text-[20px] leading-[27px] font-gilda`}
+              } text-[20px] leading-[27px] font-gilda sm:w-full w-[80%]`}
             >
               {title}
             </h5>
-            {isOpen ? (
+           <div className="sm:mt-0 mt-[6px]">
+           {isOpen ? (
               <HiMinus className="text-xl text-primary" />
             ) : (
               <HiPlus className="text-xl text-primary" />
             )}
+           </div>
           </div>
 
           <div

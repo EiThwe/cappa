@@ -1,9 +1,9 @@
 import React from "react";
 import CardCarousel from "./CardCarousel";
 
-const ExtraServices = () => {
+const ExtraServices = ({ dark }) => {
   return (
-    <section className="pricing bg-bgSoft w-full ">
+    <section className={`pricing w-full ${dark ? "bg-bgDark" : "bg-bgSoft"}`}>
       <div className="mainContainer sm:px-14 md:px-10 lg:px-0 px-3">
         <div className=" row w-full flex md:flex-row md:gap-8 flex-col gap-10 ">
           <div className=" col md:w-[32%] w-full h-full ">

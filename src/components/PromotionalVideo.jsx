@@ -14,7 +14,7 @@ const PromotionalVideo = () => {
           <h6 className="subtitle font-barlowCondensed tracking-[6px] leading-[26.3px] text-base mb-4 ">
             THE CAPPA LUXURY HOTEL
           </h6>
-          <h2 className="main-title font-gilda text-white font-medium text-[46px] leading-[57.5px] mb-4">
+          <h2 className="main-title text-center font-gilda text-white font-medium text-[46px] leading-[57.5px] mb-4">
             Promotional Video
           </h2>
           <button
@@ -33,7 +33,10 @@ const PromotionalVideo = () => {
               frameborder="0"
               className="w-full h-full"
             ></iframe>
-            <button className="absolute -top-8 right-0 text-white" onClick={()=>setShowVideo(false)}>
+            <button
+              className="absolute -top-8 right-0 text-white"
+              onClick={() => setShowVideo(false)}
+            >
               <IoCloseSharp className="text-[25px]" />
             </button>
           </div>

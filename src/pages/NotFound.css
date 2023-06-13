@@ -1,0 +1,45 @@
+.fourOfour {
+  -webkit-text-stroke: 1px #aa8453;
+  margin: -28px;
+  opacity: 0.8;
+}
+/* .homeBg {
+  background-image: url("./assets/home-bg.jpg");
+ 
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+ */
+.not-found-bg {
+  background-image: url("https://duruthemes.com/demo/html/cappa/demo2-dark/img/slider/1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  /* height: auto; */
+}
+.not-found-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
+}
+/* .blackbackground {
+    background-color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    opacity: 0.35;
+  } */

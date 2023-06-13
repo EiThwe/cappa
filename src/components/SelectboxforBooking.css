@@ -1,0 +1,45 @@
+/* .select-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 25px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 16px 16px;
+} */
+
+.selectBox div {
+  position: relative;
+}
+
+.selectBox div::after {
+  content: "";
+  font-size: 30px;
+  background-image: url("../assets/angle-smalldown.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-box {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  text-indent: 5px;
+}
+
+.select-box option {
+  padding: 20px;
+}
+li{
+  color : #ADADAD;
+}

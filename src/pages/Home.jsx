@@ -1,34 +1,26 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import LuxuryExperience from "../components/LuxuryExperience";
+import RoomsAndSuites from "../components/RoomsAndSuites";
 import ExtraServices from "../components/ExtraServices";
-import Hero from "../components/Hero";
-import FiveStar from "../components/FiveStar";
 import PromotionalVideo from "../components/PromotionalVideo";
 import ClientReview from "../components/ClientReview";
 import Services from "../components/Services";
-import RestaurantSection from "../components/RestaurantSection";
-import JuniorSuiteSection from "../components/JuniorSuiteSection";
-import RestaurantMenu from "../components/RestaurantMenu";
-import SpaWellnessSection from "../components/SpaWellnessSection";
-import SpaEtiquetteFAQ from "../components/SpaEtiquetteFAQ";
-import ContactFormSection from "../components/ContactFormSection";
-import Map from "../components/Map";
+import OurNews from "../components/OurNews";
+import Booking from "../components/Booking";
 
 const Home = () => {
   return (
     <Layout>
-      <Hero />
-      {/* <ExtraServices />
-      <Services />
-      <ClientReview />
-      <JuniorSuiteSection />
-      <RestaurantMenu/>
+      <LuxuryExperience />
+      <RoomsAndSuites />
+      <ExtraServices />
       <PromotionalVideo />
-      <SpaWellnessSection/> */}
-      <SpaEtiquetteFAQ />
-      <ContactFormSection />
-      <Map />
+      <ClientReview />
+      <Services />
+      <OurNews />
+      <Booking />
     </Layout>
   );
 };

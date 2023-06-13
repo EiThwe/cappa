@@ -14,6 +14,7 @@ import {
   SinglePost,
   Spa,
 } from "./pages";
+import FAQ from "./pages/FAQ";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       <Route path="/detail" element={<RoomDetails />} />
       <Route path="/rooms" element={<Rooms />} />
       <Route path="/coming-soon" element={<ComingSoon />} />
-      {/* <Route path="/notFound" element={<NotFound />} /> */}
+      <Route path="/faqs" element={<FAQ />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

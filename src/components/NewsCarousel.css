@@ -1,0 +1,61 @@
+.news-carousel .owl-nav .owl-prev,
+.news-carousel .owl-nav .owl-next {
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  color: white !important;
+  position: absolute;
+  transform: translateY(-200%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none !important;
+}
+
+.owl-carousel.news-carousel:hover .owl-nav .owl-prev,
+.owl-carousel.news-carousel:hover .owl-nav .owl-next {
+  display: flex !important;
+}
+
+.news-carousel .owl-nav .owl-prev:hover,
+.news-carousel .owl-nav .owl-next:hover {
+  background-color: transparent !important;
+}
+
+.owl-carousel.news-carousel .owl-nav button.owl-prev,
+.owl-carousel.news-carousel .owl-nav button.owl-next,
+.owl-carousel.news-carousel button.owl-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+}
+
+.news-carousel .owl-nav .owl-prev {
+  left: 2%;
+  top: 50%;
+}
+
+.news-carousel .owl-nav .owl-next {
+  right: 2%;
+  top: 50%;
+}
+
+.news-carousel .owl-nav .owl-prev span,
+.news-carousel .owl-nav .owl-next span {
+  font-size: 30px !important;
+  transform: translateY(-7%);
+  font-weight: lighter !important;
+}
+.owl-carousel.news-carousel button.owl-dot {
+  width: 18px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #aa8453;
+  border: 1px solid #aa8453;
+}
+.owl-theme .owl-dots .owl-dot span:hover {
+  background: #aa8453;
+}

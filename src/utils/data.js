@@ -19,8 +19,18 @@ export const navbarData = [
     name: "About",
   },
   {
-    path: "/rooms",
+    path: undefined,
     name: "Rooms & Suites",
+    subData: [
+      {
+        path: "/rooms",
+        name: "Rooms",
+      },
+      {
+        path: "/detail",
+        name: "Room Detail",
+      },
+    ],
   },
   {
     path: "/restaurant",
@@ -29,6 +39,40 @@ export const navbarData = [
   {
     path: "/spa",
     name: "Spa",
+  },
+  {
+    path: undefined,
+    name: "Pages",
+    subData: [
+      {
+        path: "/services",
+        name: "Services",
+      },
+      {
+        path: "/facilities",
+        name: "Facilities",
+      },
+      {
+        path: "/team",
+        name: "Team",
+      },
+      {
+        path: "/pricing",
+        name: "Pricing",
+      },
+      {
+        path: "/careers",
+        name: "Careers",
+      },
+      {
+        path: "/faqs",
+        name: "F.A.Qs",
+      },
+      {
+        path: "/coming-soon",
+        name: "Coming Soon",
+      },
+    ],
   },
   {
     path: "/news",
@@ -431,7 +475,7 @@ export const accordionData = [
     description:
       "Please arrive at The Spa 15 minutes prior to your scheduled treatment and enjoy the calm and serenity of The Spa atmosphere. Arriving late makes it necessary to curtail the time for your treatment.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 2,
@@ -439,7 +483,7 @@ export const accordionData = [
     description:
       "Kindly refrain from using your mobile phone in The Spa premises. Please keep your mobile phone on silent mode at all times.",
     isOpen: false,
-    height: "h-[60px]",
+    height: "sm:h-[60px] h-[120px]",
   },
   {
     id: 3,
@@ -447,15 +491,15 @@ export const accordionData = [
     description:
       "We provide a secure place for your personal items inside The Spa complex. However, we do not accept liability for loss or damage. We recommend valuable items are stored inside the safe located in your hotel room/suite.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[160px]",
   },
   {
     id: 4,
     title: "Health Matters",
     description:
-      "Please communicate health conditions such as high blood pressure and allergies, as well as pregnancy or any health-related concerns you may have when making your appointment. We do not recommend the consumption of alcohol before or directly after spa treatments or before using any facilities in the Spa and Health Club.",
+      "Please communicate health conditions such as high blood pressure and allergies, as well as pregnancy or any healtsm:h-relate h-[]d concerns you may have when making your appointment. We do not recommend the consumption of alcohol before or directly after spa treatments or before using any facilities in the Spa and Health Club.",
     isOpen: false,
-    height: "h-[100px]",
+    height: "sm:h-[100px h-[240px]",
   },
   {
     id: 5,
@@ -463,7 +507,7 @@ export const accordionData = [
     description:
       "The minimum age for entry to The Spa, The Health Club and the hydrothermal facilities is 16 years of age. Children under the age of 16 may use the hotel pool if they are accompanied by a parent/adult.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 6,
@@ -471,7 +515,7 @@ export const accordionData = [
     description:
       "The max depth of the pool is 1.60 m. There is no lifeguard at the pool. Children may only use the pool if accompanied by an adult or parent/guardian.",
     isOpen: false,
-    height: "h-[60px]",
+    height: "sm:h-[60px] h-[120px]",
   },
   {
     id: 7,
@@ -479,7 +523,7 @@ export const accordionData = [
     description:
       "Kindly note that you are not allowed to smoke in The Spa, The Health Club or sauna area.",
     isOpen: false,
-    height: "h-[60px]",
+    height: "sm:h-[60px] h-[100px]",
   },
 ];
 
@@ -490,7 +534,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 2,
@@ -498,7 +542,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 3,
@@ -506,7 +550,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 4,
@@ -514,7 +558,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 5,
@@ -522,7 +566,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 6,
@@ -530,7 +574,7 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
   {
     id: 7,
@@ -538,6 +582,6 @@ export const faqData = [
     description:
       "Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine. Donec in quis the pellentesque velit id velit ac arcu posuere blane.",
     isOpen: false,
-    height: "h-[80px]",
+    height: "sm:h-[80px] h-[140px]",
   },
 ];
