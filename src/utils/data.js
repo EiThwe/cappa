@@ -654,3 +654,30 @@ export const recentPostData = [
     title: "Retro Lighting Design in The Hotels",
   },
 ];
+
+export const restaurantBgData = [
+  {
+    image:
+      "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/1.jpg",
+  },
+  {
+    image:
+      "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/2.jpg",
+  },
+  {
+    image:
+      "https://duruthemes.com/demo/html/cappa/demo2-dark/img/restaurant/3.jpg",
+  },
+];
+
+export const spaBgData = [
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/1.jpg",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/2.jpg",
+  },
+  {
+    image: "https://duruthemes.com/demo/html/cappa/demo2-dark/img/spa/3.jpg",
+  },
+];

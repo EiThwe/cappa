@@ -2,9 +2,9 @@ import React from "react";
 import FiveStar from "./FiveStar";
 import { hoursData } from "../utils/data";
 
-const RestaurantSection = () => {
+const RestaurantSection = ({ refs }) => {
   return (
-    <section className="restaurant-about w-full bg-bgSoft">
+    <section ref={refs} className="restaurant-about w-full bg-bgSoft">
       <div className="mainContainer sm:px-14 md:px-10 lg:px-0 px-3">
         <div className="row flex flex-col gap-5 w-full">
           <FiveStar />

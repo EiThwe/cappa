@@ -1,9 +1,9 @@
 import React from "react";
 import FiveStar from "./FiveStar";
 
-const SpaWellnessSection = () => {
+const SpaWellnessSection = ({ refs }) => {
   return (
-    <section className="spa-and-wellness bg-bgSoft w-full ">
+    <section ref={refs} className="spa-and-wellness bg-bgSoft w-full ">
       <div className="mainContainer flex flex-col gap-3 sm:px-14 md:px-10 lg:px-0 px-3">
         <FiveStar />
         <h6 className="subtitle mt-1 text-base text-primary tracking-[6px] font-barlowCondensed">

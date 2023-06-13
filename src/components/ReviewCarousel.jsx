@@ -8,7 +8,7 @@ const ReviewCarousel = () => {
     <OwlCarousel
       className="owl-theme"
       loop={true}
-      autoPlay={false}
+      autoplay={false}
       items={1}
       dots={true}
       dotsClass="owl-dots"

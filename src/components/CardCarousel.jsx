@@ -19,7 +19,7 @@ const CardCarousel = () => {
     <OwlCarousel
       className="owl-theme  flex"
       loop={true}
-      autoPlay
+      autoplay={true}
       margin={30}
       items={2}
       slideBy={2}
