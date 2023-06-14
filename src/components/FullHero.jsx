@@ -16,7 +16,11 @@ const FullHero = ({ data, onClick }) => {
     >
       {data?.map(({ image }, index) => (
         <div key={index} className="w-full h-screen bg-black ">
-          <img src={image} alt="slider-image" className="w-full opacity-80" />
+          <img
+            src={image}
+            alt="slider-image"
+            className="w-full h-screen object-cover opacity-80"
+          />
 
           <div className="absolute bottom-10 left-0 w-full h-[100px] z-10 flex justify-center items-center">
             <button
