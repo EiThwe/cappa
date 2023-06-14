@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const MenuCard = ({ data }) => {
+  useEffect(() => {}, [data]);
+
   return (
-    <div className="menu-card row grid grid-cols-2 w-full gap-5">
+    <div className="menu-card row grid md:grid-cols-2 grid-cols-1 w-full gap-5 ">
       {data?.map(({ name, price, description }, i) => (
         <div
           key={i}
@@ -10,7 +12,7 @@ const MenuCard = ({ data }) => {
             i % 2 == 1 ? "justify-end" : "justify-start"
           }`}
         >
-          <div className="w-[80%] flex flex-col items-start">
+          <div className="lg:w-[80%] md:w-[90%] w-full flex flex-col items-start">
             <div className="flex justify-between w-full">
               <h6 className="menu-name font-gilda text-[20px] leading-[40px] text-primary">
                 {name}

@@ -5,7 +5,7 @@ const RestaurantMenu = () => {
   return (
     <section className="restaurant-menu w-full bg-bgDark">
       <div className="mainContainer sm:px-14 md:px-10 lg:px-0 px-3">
-        <div className="row w-full flex flex-col items-center px-8">
+        <div className="row w-full flex flex-col items-center lg:px-8 px-0">
           <div className="heading text-center">
             <h6 className="subtitle text-base text-primary tracking-[6px] font-barlowCondensed mb-3">
               LUXURY HOTEL
@@ -14,7 +14,7 @@ const RestaurantMenu = () => {
               Restaurant Menu
             </h2>
           </div>
-          <RestaurantMenuCarouselContainer/>
+          <RestaurantMenuCarouselContainer />
         </div>
       </div>
     </section>
