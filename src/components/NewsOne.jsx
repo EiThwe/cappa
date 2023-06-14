@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const NewsOne = () => {
+  const navigate = useNavigate();
+
   const Rooms = [
     {
       id: 1,
@@ -58,7 +61,10 @@ const NewsOne = () => {
           <div className=" flex flex-wrap justify-center items-center gap-5">
             {Rooms?.map((room, index) => {
               return (
-                <div className="relative  pb-32">
+                <button
+                  onClick={() => navigate("/single-post")}
+                  className="relative  pb-32"
+                >
                   <div className=" group     ">
                     {/* image section  */}
                     <div className="bgImage group w-80 overflow-hidden ">
@@ -87,7 +93,7 @@ const NewsOne = () => {
                       </h2>
                     </div>
                   </div>
-                </div>
+                </button>
               );
             })}
           </div>
