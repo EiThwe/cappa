@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from "react";
+import { VscLoading } from "react-icons/vsc";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollBtn from "./ScrollBtn";
-import ClientReview from "./ClientReview";
 import { useLocation } from "react-router-dom";
 
 const Layout = ({ children }) => {
   const { pathname } = useLocation();
   const [scrollHeight, setScrollHeight] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
 
   useEffect(() => {
     window.scrollTo({
@@ -28,6 +35,14 @@ const Layout = ({ children }) => {
       window.removeEventListener("scroll", scrollFunc);
     };
   }, []);
+
+  if (isLoading) {
+    return (
+      <div className="w-full h-screen flex justify-center items-center bg-bgSoft">
+        <VscLoading size={60} className="text-primary animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <div className="w-full  flex flex-col">
