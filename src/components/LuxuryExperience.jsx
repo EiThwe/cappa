@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "animate.css";
 
 const LuxuryExperience = () => {
@@ -7,7 +8,13 @@ const LuxuryExperience = () => {
       <div className="bg-bgSoft     ">
         <div className="mainContainer  flex flex-col md:flex-row lg:flex-row  ">
           {/* text side */}
-          <div className="  px-4 py-8 sm:px-16 md:px-10 md:min-w-[50%] md:pr-0 lg:px-10  ">
+          <motion.div
+            initial={{ translateY: 10, opacity: 0 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="  px-4 py-8 sm:px-16 md:px-10 md:min-w-[50%] md:pr-0 lg:px-10  "
+          >
             <div className="star mb-3">
               <i className="fi fi-ss-star text-starColor mr-2 "></i>
               <i className="fi fi-ss-star text-starColor mr-2 "></i>
@@ -42,23 +49,35 @@ const LuxuryExperience = () => {
                 <h3 className="text-primary text-[24px] ">855 100 4444</h3>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* images side  */}
           <div className="flex justify-end px-4 sm:px-16 md:pl-0 md:pr-10 md:-translate-y-40 lg:translate-y-0 md:gap-8  lg:px-0  gap-7 ">
-            <div className="One w-[46%] md:w-[40%] mt-auto py-24 ">
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="One w-[46%] md:w-[40%] mt-auto py-24 "
+            >
               <img
                 src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/8.jpg"
                 className="w-full animate__animated animate__slideInUp  h-[80%]"
                 alt=""
               />
-            </div>
-            <div className="two w-[46%] md:w-[40%] mt-auto py-24  -translate-y-20">
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 50, opacity: 0 }}
+              whileInView={{ translateY: -80, opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="two w-[46%] md:w-[40%] mt-auto py-24  -translate-y-20"
+            >
               <img
                 src="https://duruthemes.com/demo/html/cappa/demo2-dark/img/rooms/2.jpg"
                 className="w-full animate__animated animate__slideInUp  h-[80%]"
                 alt=""
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -20,7 +20,9 @@ const Navbar = ({ scrollNavbar }) => {
         }`}
       >
         <div className="max-w-[1100px] h-full mx-auto flex justify-between items-center px-[20px]">
-          <img src={Logo} alt="logo" className="w-[160px]" />
+          <Link to="/">
+            <img src={Logo} alt="logo" className="w-[160px]" />
+          </Link>
 
           <div
             id="nav-bar"

@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import Button from "./Button";
 
 const ServiceCard = ({ reverse, title, category, image, description }) => {
@@ -8,14 +10,27 @@ const ServiceCard = ({ reverse, title, category, image, description }) => {
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
-      <div className="md:w-1/2 w-full sm:h-[350px] h-auto cursor-pointer group overflow-hidden">
+      <motion.div
+        initial={{ translateX: !reverse ? -50 : 50, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="md:w-1/2 w-full sm:h-[350px] h-auto cursor-pointer group
+        overflow-hidden"
+      >
         <img
           src={image}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-all duration-[1000ms] ease-in-out"
         />
-      </div>
-      <div className="md:w-1/2 w-full sm:h-[350px] h-[330px]  flex flex-col py-7 sm:px-7 px-3 justify-center  items-start gap-2 bg-bgDark">
+      </motion.div>
+      <motion.div
+        initial={{ translateX: !reverse ? 50 : -50, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="md:w-1/2 w-full sm:h-[350px] h-[330px]  flex flex-col py-7 sm:px-7 px-3 justify-center  items-start gap-2 bg-bgDark"
+      >
         <h6 className="subtitle font-barlowCondensed text-primary tracking-[3px] leading-[26.3px] text-base ">
           {category}
         </h6>
@@ -24,7 +39,7 @@ const ServiceCard = ({ reverse, title, category, image, description }) => {
         </h2>
         <p className="text-base text-secondary mb-3">{description}</p>
         <Button hoverBg="bg-[#3B3B3B]">LEARN MORE</Button>
-      </div>
+      </motion.div>
     </div>
   );
 };
