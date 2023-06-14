@@ -2,9 +2,13 @@ import React from "react";
 import check from "../assets/check.svg";
 import cross from "../assets/cross.svg";
 
-const PricingCarouselCard = ({ title, price, per, image}) => {
+const PricingCarouselCard = ({ title, price, per, image, notCarousel }) => {
   return (
-    <div className=" bg-[#2B2B2B] bg- h-full">
+    <div
+      className={` bg-[#2B2B2B] h-full ${
+        notCarousel && "last:lg:col-span-1 last:md:col-span-2 last:col-span-1"
+      }`}
+    >
       <img src={image} alt="" className="w-full " />
       <div className="text-card p-10">
         <p className="text-[24px] text-white font-gilda leading-[24px] mb-3">

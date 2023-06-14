@@ -26,7 +26,7 @@ const PromotionalVideo = () => {
         </div>
       </section>
       {showVideo && (
-        <div className="popup-vid-container w-full h-screen fixed top-0 z-10 bg-black bg-opacity-60 flex justify-center items-center">
+        <div className="popup-vid-container w-full h-screen fixed top-0 z-[1000] bg-black bg-opacity-60 flex justify-center items-center">
           <div className=" youtube-popup w-[680px] h-[480px] p-2 relative">
             <iframe
               src="https://www.youtube.com/embed/7BGNAGahig8?autoplay=1"

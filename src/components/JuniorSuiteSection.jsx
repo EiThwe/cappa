@@ -3,9 +3,9 @@ import FiveStar from "./FiveStar";
 import { amenitiesData, checkinData } from "../utils/data";
 import Button from "./Button";
 
-const JuniorSuiteSection = () => {
+const JuniorSuiteSection = ({ refs }) => {
   return (
-    <section className="restaurant-about w-full bg-bgSoft">
+    <section ref={refs} className="restaurant-about w-full bg-bgSoft">
       <div className="mainContainer sm:px-14 md:px-10 lg:px-0 px-3">
         <div className="row w-full">
           <div className="flex flex-col gap-5 ">

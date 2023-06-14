@@ -9,7 +9,6 @@ import { restaurantBgData } from "../utils/data";
 const Restaurant = () => {
   const scrollRef = useRef(null);
 
-
   const restaurantHandler = () => {
     scrollRef?.current?.scrollIntoView({
       inline: "center",

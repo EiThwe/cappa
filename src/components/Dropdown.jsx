@@ -1,8 +1,10 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Dropdown = ({ isHover, setIsHover, data }) => {
+  const { pathname } = useLocation();
   const navigate = useNavigate();
+
   return (
     <div className="relative z-[1]">
       <div
@@ -20,8 +22,10 @@ const Dropdown = ({ isHover, setIsHover, data }) => {
               e.stopPropagation();
               navigate(path);
             }}
-            className="w-full py-2 border-b border-secondary border-opacity-10 text-white hover:text-primary
-           transition-all duration-300 ease-in-out flex justify-start last:border-b-transparent"
+            className={`w-full py-2 border-b border-secondary border-opacity-10
+           transition-all duration-300 ease-in-out flex justify-start last:border-b-transparent ${
+             pathname == path ? "text-primary" : "text-white hover:text-primary"
+           }`}
           >
             <h6 className="text-[16px]">{name}</h6>
           </button>
