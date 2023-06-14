@@ -45,7 +45,7 @@ const OurNews = () => {
     },
     {
       id: 6,
-      name: "Benefits fof Swimming for Your Health",
+      name: "Benefits of Swimming for Your Health",
       month: "Dec",
       day: "08",
       category: "health",

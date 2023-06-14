@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const NewsCard = ({ id, name, month, day, category, image }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="relative  pb-32">
+    <button
+      onClick={() => navigate("/single-post")}
+      className="relative  pb-32"
+    >
       <div className=" group ">
         {/* image section  */}
         <div className="bgImage group overflow-hidden  ">
@@ -25,7 +31,7 @@ const NewsCard = ({ id, name, month, day, category, image }) => {
           <h2 className="text-white font-gilda text-[24px] mb-6">{name}</h2>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
