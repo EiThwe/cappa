@@ -14,8 +14,8 @@ const RestaurantMenu = () => {
               Restaurant Menu
             </h2>
           </div>
-          <RestaurantMenuCarouselContainer />
         </div>
+        <RestaurantMenuCarouselContainer />
       </div>
     </section>
   );
